@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<data inherit_id="point_of_sale.assets">
+        <xpath expr=".">
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/SaleOrderButton.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/ViewSalesOrderButton.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/SaleOrderScreen.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/ViewSaleOrderList.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/ViewSaleOrderRow.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Popups/SalesOrderPopup.js"/>
+        </xpath>
+    </data>
