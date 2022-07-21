@@ -1,4 +1,4 @@
-odoo.define('pos_expenses_pay.SaleOrderScreen', function (require) {
+odoo.define('pos_expenses_pay.SaleOrderScreenAll', function (require) {
     'use strict';
 
     const { useState } = owl.hooks;
@@ -6,7 +6,7 @@ odoo.define('pos_expenses_pay.SaleOrderScreen', function (require) {
     const Registries = require('point_of_sale.Registries');
     const { useListener } = require('web.custom_hooks');
 
-    class SaleOrderScreen extends PosComponent {
+    class SaleOrderScreenAll extends PosComponent {
         constructor() {
             super(...arguments);
             useListener('close-screen', this.back);
@@ -97,11 +97,11 @@ odoo.define('pos_expenses_pay.SaleOrderScreen', function (require) {
             }
         }
     }
-    SaleOrderScreen.template = 'SaleOrderScreenWidget';
-    SaleOrderScreen.defaultProps = {
+    SaleOrderScreenAll.template = 'SaleOrderScreenAllWidget';
+    SaleOrderScreenAll.defaultProps = {
     };
 
-    Registries.Component.add(SaleOrderScreen);
+    Registries.Component.add(SaleOrderScreenAll);
 
-    return SaleOrderScreen;
+    return SaleOrderScreenAll;
 });

@@ -14,7 +14,7 @@ odoo.define('wt_create_so_from_pos.ViewAllSalesOrderButton', function(require) {
         }
         async onClick() {
             var self = this;
-            this.showScreen('SaleOrderScreen');
+            this.showScreen('SaleOrderScreenAll');
         }
     }
     ViewAllSalesOrderButton.template = 'ViewAllSalesOrderButton';
