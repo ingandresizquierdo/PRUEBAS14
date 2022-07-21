@@ -12,4 +12,10 @@
             View Sales Order
         </div>
     </t>
+    <t t-name="ViewAllSalesOrderButton" owl="1">
+        <div class="control-button">
+            <i class="fa fa-link" />
+             Quotation/Order
+        </div>
+    </t>
 </templates>

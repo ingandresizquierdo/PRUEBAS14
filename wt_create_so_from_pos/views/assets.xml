@@ -9,6 +9,8 @@
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/ViewSaleOrderList.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/ViewSaleOrderRow.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Popups/SalesOrderPopup.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/ViewAllSalesOrderButton.js"/>
+            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/SaleOrderScreenAll.js"/>
         </xpath>
     </template>
 </odoo>
