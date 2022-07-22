@@ -14,6 +14,7 @@
     "qweb": ['static/src/xml/Popups/SalesOrderPopup.xml',
             'static/src/xml/Screens/ProductScreen/ControlButtons/SaleOrderButton.xml',
             'static/src/xml/Screens/SaleOrderScreen/SaleOrderScreen.xml',
+            'static/src/xml/Screens/SaleOrderScreen/SaleOrderScreenAll.xml',
             'static/src/xml/Screens/SaleOrderScreen/ViewSaleOrderList.xml',
             'static/src/xml/Screens/SaleOrderScreen/ViewSaleOrderRow.xml'],
     'images': ['static/images/screen_image.png'],
