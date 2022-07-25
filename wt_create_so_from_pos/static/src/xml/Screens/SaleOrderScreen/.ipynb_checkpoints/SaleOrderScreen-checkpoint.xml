@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-     <t t-name="SaleOrderScreenAllWidget" owl="1">
+
+    <t t-name="SaleOrderScreenWidget" owl="1">
         <div class="order-management-screen screen">
             <div class="screen-full-width">
                 <div class="rightpane">
@@ -10,15 +11,6 @@
                                 <i class="fa fa-angle-double-left"></i>
                                 <span> Back</span>
                             </div>
-                            <!--<div class="item search-box">
-                                <span class="icon">
-                                    <i class="fa fa-search" />
-                                </span>
-                                <input type="text" t-model="orderManagementContext.searchString" t-on-keydown="onInputKeydown" placeholder="E.g. customer: Steward, date: 2020-05-09" />
-                                <span class="clear" t-on-click="trigger('clear-search')">
-                                    <i class="fa fa-remove" />
-                                </span>
-                            </div>-->
                         </div>
                         <ViewSaleOrderList orders="state.orders"/>
                     </div>

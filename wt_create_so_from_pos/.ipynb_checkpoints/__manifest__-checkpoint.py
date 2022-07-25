@@ -1,0 +1,27 @@
+{
+    'name': 'Create Sales Order From POS',
+    'version': '15.0.0.1',
+    'category': 'Sales/Point of Sale',
+    'summary': 'Create sale order from pos screen and view the sales order created fom pos',
+    'description': '''
+    ''',
+    'author': 'Warlock Technologies Pvt Ltd.',
+    'website': 'http://warlocktechnologies.com',
+    'support': 'support@warlocktechnologies.com',
+    'depends': ['point_of_sale', 'sale_management'],
+    "data": ['views/pos_config.xml',
+            'views/assets.xml'],
+    "qweb": ['static/src/xml/Popups/SalesOrderPopup.xml',
+            'static/src/xml/Screens/ProductScreen/ControlButtons/SaleOrderButton.xml',
+            'static/src/xml/Screens/SaleOrderScreen/SaleOrderScreen.xml',
+            'static/src/xml/Screens/SaleOrderScreen/SaleOrderScreenAll.xml',
+            'static/src/xml/Screens/SaleOrderScreen/ViewSaleOrderList.xml',
+            'static/src/xml/Screens/SaleOrderScreen/ViewSaleOrderRow.xml'],
+    'images': ['static/images/screen_image.png'],
+    'application': True,
+    'installable': True,
+    'auto_install': False,
+    'license': 'OPL-1',
+    'external_dependencies': {
+    },
+}
