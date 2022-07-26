@@ -1,4 +1,4 @@
-odoo.define('pos_expenses_pay.SaleOrderScreen', function (require) {
+odoo.define('wt_create_so_from_pos.SaleOrderScreen', function (require) {
     'use strict';
 
     const { useState } = owl.hooks;
