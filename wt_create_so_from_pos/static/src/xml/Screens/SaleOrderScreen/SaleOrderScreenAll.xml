@@ -10,15 +10,10 @@
                                 <i class="fa fa-angle-double-left"></i>
                                 <span> Back</span>
                             </div>
-                            <!--<div class="item search-box">
-                                <span class="icon">
-                                    <i class="fa fa-search" />
-                                </span>
-                                <input type="text" t-model="orderManagementContext.searchString" t-on-keydown="onInputKeydown" placeholder="E.g. customer: Steward, date: 2020-05-09" />
-                                <span class="clear" t-on-click="trigger('clear-search')">
-                                    <i class="fa fa-remove" />
-                                </span>
-                            </div>-->
+                            <div class="searchbox-client top-content-center">
+                                <input placeholder="Search Customers" size="1" t-on-keyup="searchOrders" />
+                                <span class="search-clear-client"></span>
+                            </div>
                         </div>
                         <ViewSaleOrderList orders="state.orders"/>
                     </div>

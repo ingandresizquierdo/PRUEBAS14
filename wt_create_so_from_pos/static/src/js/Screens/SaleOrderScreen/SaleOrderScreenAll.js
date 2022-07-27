@@ -16,10 +16,38 @@ odoo.define('wt_create_so_from_pos.SaleOrderScreenAll', function (require) {
                 orders: []
             });
         }
+        
+        capitalize(string) {
+              return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+        
+        async searchOrders(event){
+            let key = '';
+            let nameOrder = {};
+            let partnerOrder = {};
+            let userOrder = {};
+            let orders = {};
+            let orders2 = Promise.resolve()
+            orders2 = await this.orders();
+            orders = orders2;
+            key = event.target.value.trim();
+            nameOrder = orders.filter(x => x.name.match(this.capitalize(key))) || {};
+            partnerOrder = orders.filter(x => x.partner_id[1].match(this.capitalize(key))) || {};
+            userOrder = orders.filter(x => x.user_id[1].match(this.capitalize(key))) || {};
+            if(nameOrder.length >= 1){
+                this.state.orders = nameOrder;
+            }else if(partnerOrder.length >= 1){
+                this.state.orders = partnerOrder;
+            }else if(userOrder.length >= 1){
+                this.state.orders = userOrder;
+            }    
+        }
+        
         async mounted(){
             super.mounted;
             this.state.orders = await this.orders();
         }
+        
         back() {
             this.showScreen('ProductScreen');
         }

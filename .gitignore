@@ -1,0 +1,6 @@
+# Logs
+__pycache__/*
+
+# Editor directories and files
+.ipynb_checkpoints/*
+

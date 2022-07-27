@@ -3,7 +3,6 @@
     <template id="assets" inherit_id="point_of_sale.assets">
       <xpath expr="." position="inside">
             <link rel="stylesheet" href="/wt_create_so_from_pos/static/description/css/style.css"/>
-            <link rel="stylesheet" href="/wt_create_so_from_pos/static/description/css/search.css"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/models.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/SaleOrderButton.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/ViewSalesOrderButton.js"/>

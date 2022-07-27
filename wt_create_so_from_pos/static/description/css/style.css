@@ -1950,6 +1950,7 @@ td {
     padding: 3px 13px;
     margin-top: 12px;
     margin-bottom : 12px;
+    flex: 1;
 }
 
 .pos .searchbox-client input {
