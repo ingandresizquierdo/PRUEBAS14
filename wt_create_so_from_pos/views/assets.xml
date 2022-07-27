@@ -5,7 +5,6 @@
             <link rel="stylesheet" href="/wt_create_so_from_pos/static/description/css/style.css"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/models.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/SaleOrderButton.js"/>
-            <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ProductScreen/ControlButtons/ViewSalesOrderButton.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/ControlPanel/ControlPanelSearch.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/SaleOrderScreen.js"/>
             <script type="text/javascript" src="/wt_create_so_from_pos/static/src/js/Screens/SaleOrderScreen/ViewSaleOrderList.js"/>
