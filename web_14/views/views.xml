@@ -24,7 +24,7 @@
 
     <!-- server action to the one above -->
 
-    <record model="ir.actions.server" id="web_14.action_server">
+    <!--<record model="ir.actions.server" id="web_14.action_server">
       <field name="name">web_14 server</field>
       <field name="model_id" ref="model_web_14_web_14"/>
       <field name="state">code</field>
@@ -32,10 +32,10 @@
         action = {
           "type": "ir.actions.act_window",
           "view_mode": "tree,form",
-          "res_model": model._name,
+          "res_model": model_web_14_web_14,
         }
       </field>
-    </record>
+    </record> -->
     <!-- Top menu item -->
     <menuitem name="web_14" id="web_14.menu_root"/>
     <!-- menu categories -->
@@ -45,7 +45,7 @@
 
     <menuitem name="List" id="web_14.menu_1_list" parent="web_14.menu_1"
               action="web_14.action_window"/>
-    <menuitem name="Server to list" id="web_14" parent="web_14.menu_2"
-              action="web_14.action_server"/>
+    <menuitem name="Server to list" id="web_14" parent="web_14.menu_2"/>
+              <!-- action="web_14.action_server" --> 
   </data>
 </odoo>
