@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="web_14.list">
       <field name="name">web_14 list</field>
       <field name="model">web_14.web_14</field>
@@ -13,19 +13,17 @@
         </tree>
       </field>
     </record>
--->
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="web_14.action_window">
       <field name="name">web_14 window</field>
       <field name="res_model">web_14.web_14</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
 
     <!-- server action to the one above -->
-<!--
+
     <record model="ir.actions.server" id="web_14.action_server">
       <field name="name">web_14 server</field>
       <field name="model_id" ref="model_web_14_web_14"/>
@@ -38,23 +36,16 @@
         }
       </field>
     </record>
--->
-
     <!-- Top menu item -->
-<!--
     <menuitem name="web_14" id="web_14.menu_root"/>
--->
     <!-- menu categories -->
-<!--
     <menuitem name="Menu 1" id="web_14.menu_1" parent="web_14.menu_root"/>
     <menuitem name="Menu 2" id="web_14.menu_2" parent="web_14.menu_root"/>
--->
     <!-- actions -->
-<!--
+
     <menuitem name="List" id="web_14.menu_1_list" parent="web_14.menu_1"
               action="web_14.action_window"/>
     <menuitem name="Server to list" id="web_14" parent="web_14.menu_2"
               action="web_14.action_server"/>
--->
   </data>
 </odoo>
