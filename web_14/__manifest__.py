@@ -26,11 +26,11 @@
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
+        'static/src/xml/assets.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
-        'static/src/xml/assets.xml',
     ],
 }
