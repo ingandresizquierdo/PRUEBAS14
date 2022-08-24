@@ -3,10 +3,16 @@ from odoo import http
 
 
 class Web14(http.Controller):
-     @http.route('/introdoo/', auth='public')
-     def index(self, **kw):
-         return "Hello, world"
-
+        
+    @http.route('/introdoo', auth='public', website=True)
+    def catalog(self, **kwargs):
+        Book = http.request.env["web_14.web_14"]
+        books = Book.sudo().search([])
+        return http.request.render(
+            "library_portal.book_catalog",
+              {"books": books},
+        )
+    """
      @http.route('/web_14/web_14/objects/', auth='public')
      def list(self, **kw):
          return http.request.render('web_14.listing', {
@@ -18,4 +24,4 @@ class Web14(http.Controller):
      def object(self, obj, **kw):
          return http.request.render('web_14.object', {
              'object': obj
-         })
+         })"""

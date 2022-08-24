@@ -1,22 +1,47 @@
 <odoo>
-    <data>
-        <template id="listing">
-          <ul>
-            <li t-foreach="objects" t-as="object">
-              <a t-attf-href="#{ root }/objects/#{ object.id }">
-                <t t-esc="object.display_name"/>
-              </a>
-            </li>
-          </ul>
-        </template>
-        <template id="object">
-          <h1><t t-esc="object.display_name"/></h1>
-          <dl>
-            <t t-foreach="object._fields" t-as="field">
-              <dt><t t-esc="field"/></dt>
-              <dd><t t-esc="object[field]"/></dd>
-            </t>
-          </dl>
-        </template>
+  <data>
+      <template id="book_catalog" name="Book List">
+        <t t-call="web.frontend_layout">
+          <t t-set="title">Catalogo Introdoo</t>
+          <div class="oe_structure">
+            <div class="container">
+              <h1 class="h1-book-catalog">
+            Catalogo Introdoo</h1>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Primer Valor</th>
+                    <th scope="col">Segundo Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <t t-foreach="books" t-as="book">
+                    <tr scope="row">
+                      <td>
+                        <span t-field="book.name" />
+                      </td>
+                      <td>
+                        <span t-field="book.value" />
+                      </td>
+                      <td>
+                        <span t-field="book.value2" />
+                      </td>
+                    </tr>
+                  </t>
+                </tbody>
+              </table>
+                <button
+                  t-name="Counter"
+                  t-on-click="increment"
+                  type="button"
+                  class="btn btn-success btn-lg btn-block"
+                >
+                  Click Me! [<t t-esc="state.value"/>]
+                </button>
+            </div>
+          </div>
+        </t>
+      </template>
     </data>
-</odoo>
+  </odoo>
